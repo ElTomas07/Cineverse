@@ -196,9 +196,15 @@ body{
 }
 
 .peliculas-recomendadas .contenedor-carousel .carousel .pelicula.hover {
-	transform: scale(1.2);
+	transform: scale(1.1);
 	transform-origin: center;
 }
+.pelicula{
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+    
+}
+
 
 .peliculas-recomendadas .contenedor-carousel .carousel .pelicula img {
 	width: 100%;
@@ -231,7 +237,7 @@ body{
 
 	.peliculas-recomendadas .contenedor-carousel .carousel {
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(2, 1fr);
 		gap: 20px;
 	}
 
@@ -245,6 +251,14 @@ body{
     padding-top: 2rem;
     font-size: 2rem;
 }
+
+.menor{
+    width: 3rem;
+    height: 3rem;
+}
+.mayor{
+    width: 2rem;
+    height: 2rem;
 form {
     text-align: center;
     margin-top: 78px;
