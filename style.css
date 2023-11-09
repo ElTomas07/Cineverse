@@ -182,7 +182,6 @@ body{
 	padding: 20px 0;
 	overflow: hidden;
 	scroll-behavior: smooth;
-
 }
 
 .peliculas-recomendadas .contenedor-carousel .carousel {
@@ -205,6 +204,7 @@ body{
     margin-right: 0.7rem;
     
 }
+
 
 .peliculas-recomendadas .contenedor-carousel .carousel .pelicula img {
 	width: 100%;
@@ -237,10 +237,7 @@ body{
 
 	.peliculas-recomendadas .contenedor-carousel .carousel {
 		display: grid;
-
 		grid-template-columns: repeat(2, 1fr);
-
-
 		gap: 20px;
 	}
 
@@ -254,6 +251,7 @@ body{
     padding-top: 2rem;
     font-size: 2rem;
 }
+
 .menor{
     width: 3rem;
     height: 3rem;
@@ -261,7 +259,6 @@ body{
 .mayor{
     width: 2rem;
     height: 2rem;
-}
 form {
     text-align: center;
     margin-top: 78px;
@@ -345,14 +342,14 @@ form {
 
 .container2 {
     background-image: url(img2/imagan\ de\ fondo.jpeg);
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 70vh;
+    min-height: 40vh;
     display: flex;
     align-items: center;
+    object-fit: cover;
   }
-  
   
   
 .image-grid {
