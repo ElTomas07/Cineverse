@@ -14,10 +14,9 @@ body{
     color: #ffff
 }
 
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-}
+
+
+
 
 .header{
     background-image: url(img/hora-aventura-bg.jpg);
@@ -279,6 +278,11 @@ form {
     display: flex;    
 }
 
+.all {
+    width: 100%;
+    text-align: center;
+
+}
 
 
 .container {
@@ -286,40 +290,56 @@ form {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 4rem;
+    gap: 5rem;
     width: 100%;
-    /* margin-top: 5rem; */
+    height: auto;
     padding-bottom: 5rem;
     border-top: 3px solid white;
     padding-top: 5rem;
+  
+     
     
 }
 
+
 .boton-modal {
-    background-image: url(img/2.jpg);
-    color: black;
-    width: 20rem;
-    height: 10rem;
+    text-align: center;
+    color: white;
+    padding-top: 1rem;
+    
+    
 }
+
+
+
+
 .boton-modal2 {
     background-image: url(img/1.jpg);
     color: black;
     width: 20rem;
     height: 10rem;
 }
+
+
 .content-modal video {
     width: 100%;
-    height: 100%;
+    height: 93%;
 }
 
 .boton-modal label{
-    padding: 10px 15px;
-    
+    padding: 10px 15px;  
+       
+}
+.movie img {
+    z-index: -5;
+   
 }
 
 #btn-modal{
     display: none;
 }
+
+
 
 .container-modal{
     width: 100%;
@@ -331,24 +351,78 @@ form {
     display: none;
     justify-content: center;
     align-items: center;
-    z-index: 100;
+    z-index: 1;
 }
 #btn-modal:checked ~ .container-modal {
     display: flex;
 }
 
-.content-modal{
-    width: 30rem;
-    height: 30rem;
+
+.open-modal {
+    width: 10rem;
+    background-color:transparent;
+   color: rgb(255, 255, 255);
+    cursor: pointer;
+    border: none;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  
+  .modal-content {
+    background-color: red;
+    margin: 15% auto; 
     padding: 20px;
-    background-color: black;
+    border: 1px solid #888;
+    width: 50%;
+    border-radius: 0.5rem;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .movie{
+display: flex;
+flex-direction: column;
+align-items: center;
+  }
+
+
+
+.content-modal{
+    width: 70rem;
+    height: 40rem;
+    padding: 20px;
+    background-color: gray;
     border-radius: 4px;
+    border-radius: 5px;
+    border: 2px solid red;
+    
 
 }
 .content-modal .btn-cerrar {
-    width: 100%;
+    height: 2rem;
     margin-top: 15px;
     display: flex;
+    align-items: flex-end;
     justify-content: flex-end;
 }
 
@@ -364,39 +438,7 @@ form {
 .content-modal .btn-cerrar label:hover {
     background-color: aqua;
 }
-
-
-.movies {
-   
-    opacity: 0.8;
-    transition: 1s ;
-    /* transform: skew(5deg); */
-      display: flex;
-      border: 3px solid white;
-}
-.movies p {
-    margin: auto;
-    padding: 3rem;
-    line-height: 2rem;
-    font-size: 1.5rem;
-    color: rgb(255, 184, 3);
-    text-align: center;
-}
-.movies img {
-    width: 20rem;
-    height: 27rem;
-}
-.movies video {
-    width: 28rem;
-    height: 28rem;           
-}
-
-
-.movies:hover {    
-    transform: scale(1.1);
-    opacity: 1.9;
-    box-shadow: 1px 1px 15px 5px skyblue ;    
-}
+    
 
 .header2{
     background-image: url("edicion.jpg");
@@ -409,9 +451,6 @@ form {
     height: 100vh;
 }
 
-.all {
-    text-align: center;
-}
 
 .titleMovies{
     margin: 5rem;
